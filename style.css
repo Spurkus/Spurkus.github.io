@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.epic {
+  max-height: 1080;
+  background: linear-gradient(#b53245, #ffd49d);
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 1280;
+}
+header .logo {
+  color: #ffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+header ul {
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #ffff;
+  border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active {
+  background: #ffff;
+  color: orangered;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #480013, transparent);
+  z-index: 1000;
+}
+.sec {
+  position: relative;
+  padding: 100px;
+  background-color: #480013;
+}
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #ffff;
+}
+.sec p {
+  font-size: 1em;
+  color: #ffff;
+}
+.sec img.JY {
+  max-width: 500px;
+  float: right;
+  list-style: none;
+  margin-left: 20px;
+  display: flex;
+  border-radius: 50%;
+}
+text {
+  position: absolute;
+  color: #ffff;
+  white-space: nowrap;
+  font-size: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(400px);
+}
+#pp {
+  position: relative;
+  padding: 100px;
+  background: linear-gradient(#480013, #f6813d);
+}
+
+#pp img {
+  object-fit: cover;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  margin-top: 300px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+#tube {
+  transform: translateY(400px);
+}
+
+#inches {
+  position: absolute;
+  color: #ffff;
+  white-space: nowrap;
+  font-size: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
